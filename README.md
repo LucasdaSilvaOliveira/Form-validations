@@ -2,6 +2,8 @@
 
 ![Design preview for the Multi-step form coding challenge](./design/desktop-preview.jpg)
 
+Link: https://lucasdasilvaoliveira.github.io/Form-validations/
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
