@@ -1,0 +1,274 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu-Medium.ttf);
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu-Regular.ttf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+}
+
+#bg_sidebar_steps_mobile {
+  display: none;
+}
+
+#container {
+  width: 800px;
+  height: 568px;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4941176471);
+  padding-right: 10px;
+}
+
+#section_steps_selection {
+  position: relative;
+  width: 274px;
+}
+
+#bg_sidebar_steps {
+  position: absolute;
+}
+
+#div_steps_selection {
+  position: absolute;
+  width: 100%;
+  margin: 50px 18%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step_item {
+  font-size: 20px;
+  color: white;
+  display: flex;
+  gap: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5607843137);
+}
+.step_item > span {
+  border: 1px solid white;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: all 130ms ease-in-out;
+  cursor: pointer;
+}
+.step_item > span:hover {
+  background-color: white;
+  color: hsl(213deg, 96%, 18%);
+}
+.step_item div {
+  display: flex;
+  flex-direction: column;
+}
+.step_item div span:nth-child(2) {
+  font-weight: bold;
+}
+
+input {
+  padding: 3px 6px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+#steps {
+  padding-top: 70px;
+  margin-left: 375px;
+}
+#steps a {
+  text-decoration: none;
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  background-color: gray;
+  border: none;
+  padding: 8px 12px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5019607843);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  color: white;
+  background-color: hsl(213deg, 96%, 18%);
+  border: none;
+  padding: 8px 12px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5019607843);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+h1 {
+  color: hsl(213deg, 96%, 18%);
+  font-size: 30px;
+}
+
+p {
+  color: hsl(0deg, 2%, 44%);
+}
+
+h2 {
+  color: hsl(213deg, 96%, 18%);
+}
+
+#step_1 {
+  line-height: 40px;
+}
+#step_1 h2 {
+  font-weight: 400;
+}
+
+#step_2 {
+  display: none;
+}
+#step_2 h2 {
+  font-weight: 500;
+}
+#step_2 #step_2_container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+#step_2 #step_2_options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+#step_2 #step_2_options div {
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+  padding-top: 100px;
+  cursor: pointer;
+}
+#step_2 #step_2_options div img {
+  position: absolute;
+  top: 5px;
+}
+#step_2 #step_2_options div:hover {
+  border: 1px solid hsl(243deg, 100%, 62%);
+}
+#step_2 #step_2_change {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+#step_2 label {
+  cursor: pointer;
+}
+#step_2 h3 {
+  color: hsl(213deg, 96%, 18%);
+  font-weight: 400;
+}
+
+.add_border {
+  border: 1px solid hsl(243deg, 100%, 62%);
+  background-color: #b8b2b2;
+}
+
+.add_border_only {
+  border: 1px solid hsl(243deg, 100%, 62%);
+}
+
+#step_3 {
+  display: none;
+}
+#step_3 h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+#step_3 div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+#step_3 div span:last-child {
+  position: absolute;
+  right: 20px;
+  color: hsl(243deg, 100%, 62%);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3137254902);
+}
+#step_3 div:has(input) {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#step_4 {
+  display: none;
+}
+#step_4 #div_step_4_change {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+#step_4 #div_step_4_change select {
+  padding: 3px 5px;
+  border: none;
+}
+#step_4 #div_step_4_change span {
+  color: hsl(213deg, 96%, 18%);
+  font-size: 18px;
+  font-weight: 700;
+}
+#step_4 div {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 30px;
+}
+#step_4 div span {
+  color: hsl(213deg, 96%, 18%);
+}
+#step_4 :nth-child(6) span {
+  color: hsl(243deg, 100%, 62%);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#step_5 {
+  display: none;
+  text-align: center;
+  margin-top: 80px;
+}
+#step_5 h1,
+#step_5 p {
+  margin-top: 30px;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.attribution {
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(to right, white, #3c939e, #1c438b, #3c939e, white);
+  width: 80%;
+  margin: auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5137254902);
+}
+.attribution a {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
